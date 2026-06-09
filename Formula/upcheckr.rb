@@ -7,13 +7,13 @@
 class Upcheckr < Formula
   desc "Self-hosted live wall for pushed application metrics"
   homepage "https://upcheckr.co"
-  version "0.1.0"
+  version "0.2.1"
   license :cannot_represent
 
   on_macos do
     on_arm do
       url "https://github.com/laurentiud/upcheckr-public-releases/releases/download/v#{version}/upcheckr-macos-arm64"
-      sha256 "b64f49eb31fd270fba76196876bf7615c537229af07ef9a1a76144795990242a"
+      sha256 "b537f8b97a47a51105ba0ea08c41ecb29ea5b3a8bd04a006830d6a04a9c1b04c"
     end
     on_intel do
       odie "No native build for Intel macOS — download upcheckr.jar from " \
@@ -24,11 +24,11 @@ class Upcheckr < Formula
   on_linux do
     on_arm do
       url "https://github.com/laurentiud/upcheckr-public-releases/releases/download/v#{version}/upcheckr-linux-arm64"
-      sha256 "b9ac48b66bc6bafb432e4a9c573f2381426c8953460e6497a2c249257f726263"
+      sha256 "af15dea4c1471116752179fdb5a5d028a0d61483c725412d97202d4ce8d2ad0a"
     end
     on_intel do
       url "https://github.com/laurentiud/upcheckr-public-releases/releases/download/v#{version}/upcheckr-linux-x64"
-      sha256 "b07b80b6d122beb4e10ca9ebb1b60086025cff5f4995de2012a08dc872178e26"
+      sha256 "0ea1ee27a220e62936174d2b45d376633b617138b31f3b62d729ca68b5bc5a0a"
     end
   end
 
