@@ -12,7 +12,7 @@ That pulls the prebuilt native binary (no Java needed) and puts `upcheckr` on yo
 UPCHECKR_ADMIN_PASSWORD=secret upcheckr
 ```
 
-Open <http://localhost:8080>. Data lives in SQLite at `~/.upcheckr/upcheckr.db` (override with `UPCHECKR_DB`).
+Open <http://localhost:7090>. Data lives in SQLite at `~/.upcheckr/upcheckr.db` (override with `UPCHECKR_DB`).
 
 ## Platforms
 
