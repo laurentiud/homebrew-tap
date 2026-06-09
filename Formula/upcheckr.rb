@@ -39,8 +39,9 @@ class Upcheckr < Formula
   def caveats
     <<~EOS
       Start the wall with:  upcheckr
-      It listens on http://localhost:8080 (override with UPCHECKR_PORT).
-      Set UPCHECKR_ADMIN_PASSWORD to pin the admin password (otherwise one is generated and printed).
+      The first run asks you to set an admin password, then serves http://localhost:8080.
+      Change the port with `--port 9000` (or UPCHECKR_PORT); reset the password later with
+      `upcheckr --reset-password` (keeps your data). Set UPCHECKR_ADMIN_PASSWORD to run unattended.
       Data is stored in SQLite at ~/.upcheckr/upcheckr.db (override with UPCHECKR_DB).
     EOS
   end
